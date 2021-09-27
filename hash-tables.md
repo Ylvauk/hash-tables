@@ -143,6 +143,7 @@ This might look like:
 ![chaining](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/hash-tables-deep-dive/english/10-chaining.png)
 
 **❓ What data structure does it look like we are using in this graphic?**
+
 **❓ What other data structure could we use instead?**
 
 Naturally, there are some pros and cons to using ``chaining``:
