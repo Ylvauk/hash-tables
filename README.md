@@ -12,28 +12,15 @@
     - Solve hash collisions with closed addressing
     - Explain the advantages and disadvantages of open and closed addressing
 
----
-## Roadmap
-
-* Setup
-* Defining hash tables
-* The hashing algorithm
-* Uh-oh, we have a hash collision
-* Open addressing
-* Closed addressing
-* Common methods with probing and chaining
-* Hash tables in the real world
-
 ___
 
 ## Setup
 
 * Clone down the starter code, install dependencies, and cd into project:
 ```
-    $ git clone https://git.generalassemb.ly/shaw-kitajima/GA-Post-Course-CS.git
-    $ cd GA-Post-Course-CS/
+    $ git clone this repostiory
+    $ cd hash-tables-lecture
     $ npm i
-    $ cd hash-tables/
 ```
 
 * run the tests
@@ -47,7 +34,7 @@ ___
 
 ## Hash Tables
 
-Welcome to the most easily understandable data structure that we will cover in this cohort! A ``hash table`` is a list-like data structure that’s designed to quickly store and retrieve key data records. To store keys in a hash table, they must be mapped (with a ``hash algorithm``) to the set of possible indices in the table or to addresses of a memory location.
+Welcome to our next data structure! A ``hash table`` is a list-like data structure that’s designed to quickly store and retrieve key data records. To store keys in a hash table, they must be mapped (with a ``hash algorithm``) to the set of possible indices in the table or to addresses of a memory location.
 
 What does that mean in English? Imagine you have an array. If you know the index of the array to look in, isn't the time complexity to access the element at that index ``O(1)``? So why don't we create an array and call that the ``hash table``? When we want to add values to the hash table, we will using a helper algorithm (the ``hash algorithm``) to give us an index of our hash table to put that value in. 
 
@@ -170,12 +157,12 @@ Hash tables are incredible in situations where you need to access items in colle
 
 When a user presses the space bar, you could trigger the hash function on the word, and see if you hash table of correctly spelled words finds a value there! If it does, you have spelled the word correctly. Otherwise, the word is misspelled.
 
-**❓ How could we use hash tables to suggest the correct spelling?**
+Also, the v8 javascript engine used by Node.js, Chrome, and other environments uses a hash table to implement Sets and Maps: https://v8.dev/blog/hash-code.
 
 ___
 
 ## Essential Questions
 
 1. What does the hashing algorithm do, and what is the absolute rule it must follow?
-2. What is a hash collision?
-3. Is clustering of data in the hash table a more common occurrence when chaining or probing?
+2. What are other qualitities of a good hash function?
+3. What is a hash collision?
